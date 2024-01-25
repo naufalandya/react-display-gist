@@ -1,0 +1,102 @@
+/*Ini buat hp */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(10, 10, 10);
+    min-width: 100vw;
+}
+
+.navbar {
+    background-color: rgb(17, 17, 17);
+    border-bottom: solid 2px rgb(36, 36, 36);
+}
+
+.navbar ul {
+    display:flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap:8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    padding: 1rem 0.8rem;
+    display: inline-block;
+    border-bottom: solid 2px transparent;
+}
+
+.navbar a:hover {
+    border-bottom: solid 2px white;
+    background-color: rgb(24, 24, 24);
+    padding: 1rem 0.8rem;
+    display: inline-block;
+}
+
+.navbar a:active {
+    border-bottom: solid 2px white;
+}
+
+.card-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.card-thoughts {
+    display:flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 90%;
+    min-width: 300px;
+    margin-bottom: 20px;
+    background-color: rgb(13, 14, 17);
+    padding: 1rem;
+    gap:8px;
+    border: 2px solid rgb(228, 220, 220,0.2);
+    line-height: 34px;
+    text-align: justify;
+}
+
+.card-thoughts:hover {
+    background-color: rgb(32, 33, 41);
+}
+
+.card-thoughts h1 {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .card-thoughts h1 {
+        font-size: 16px;
+    }
+}
+
+.card-header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-between;
+    gap:34px;
+}
+
+.App {
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar ul li a.active {
+    border-bottom: solid 2px white;
+  }
+  
